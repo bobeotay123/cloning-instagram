@@ -1,0 +1,142 @@
+.header{
+  position: fixed;
+  top: 0px;
+  height: 77px;
+  width: 100%;
+  margin: 0px;
+  border: 0px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  vertical-align: baseline;
+  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+}
+.header .logo-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header .content{
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 950px;
+  height: 100%;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 26px 0px 26px 0px;
+  margin: 0px 0px 0px 0px;
+  border: 0px;
+}
+.header .content .logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 0;
+}
+.header .content .logo .logo-image{
+  height: 25px;
+  width: 25px;
+  padding-right: 15px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-right: 1.5px solid black;
+  box-sizing: content-box;
+}
+.header .content .logo .title{
+  padding: 8px 0px 0px 15px;
+  height: 30px;
+  width: 105px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header .content .navigations {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  float: right;
+}
+
+.header .content .navigations .icon{
+  height: 22px;
+  width: 22px;
+  padding-left: 12px;
+  border: 0px transparent;
+}
+.header .navigations .padding-right{
+  margin-right: 20px;
+  padding-right: 12px;
+}
+.header .navigations .no-padding-right{
+  padding-right: 0px;
+  margin-right: 5px;
+}
+
+.header .content .search-bar{
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 18px;
+  padding: 0px;
+  margin: 0px;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  background-color: #fafafa;
+  width: 220px;
+  height: 28px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.header .content .search-bar:focus{
+  text-align: start;
+  padding-left: 10px;
+}
+
+@media (max-width: 1000px){
+  .header .content{
+    margin: 0px;
+    border: 0px;
+    justify-content: space-between;
+    padding-right: 0px;
+    width: 100%;
+  }
+  .header .content .logo{
+    padding-left: 15px;
+  }
+
+  .header .navigations{
+    padding-left: 0px;
+    padding-right: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 150px;
+  }
+  .header .content .logo{
+    padding-right: 0px;
+    margin: 0px;
+    border: 0px;
+    float: left;
+  }
+}
+@media (max-width: 600px){
+  .header .content .search-bar{
+    display: none;
+  }
+  .header .content .logo .image{
+    border: 0px transparent;
+  }
+  .header .navigations .icon .padding-right{
+    padding-left: 0px;
+  }
+  .header .navigations .icon .no-padding-right{
+    padding-left: 0px;
+    margin-right: 0px;
+  }
+}
