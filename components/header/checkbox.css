@@ -1,0 +1,33 @@
+.follow-btn{
+  -webkit-appearance: button;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 0px transparent;
+}
+.follow-btn::before{
+  transition: all 0.3s;
+  height: 30px;
+  border-radius: 2.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "Theo dõi";
+  width: 75px;
+  background-color: rgb(0, 128, 255);
+  color: white;
+}
+.follow-btn:checked::before{
+  border-radius: 2.5px;
+  border: #cfcfcf solid 1px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "Đã theo dõi";
+  width: 110px;
+  background-color: white;
+  color: black;
+}
