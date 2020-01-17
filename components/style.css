@@ -22,3 +22,6 @@ body{
 button,input:focus{
   outline: white;
 }
+a{
+  text-decoration: none;
+}

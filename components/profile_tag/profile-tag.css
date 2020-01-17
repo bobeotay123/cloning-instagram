@@ -1,0 +1,48 @@
+.profile{
+  height: 50px;
+  width: 300px;
+  padding: 0;
+  font-family: sans-serif;
+  flex-direction: column;
+  display: none;
+}
+.profile .user{
+
+  height: 50px;
+  width: 50px;
+}
+
+.profile .user .avatar{
+  margin: 0px 15px 0px 0px;
+  border: 1px transparent;
+  border-radius: 100px;
+  float: left;
+}
+.profile .text-content{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+.profile .text-content .user-id{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  display: inline;
+}
+.profile .text-content .user-id a{
+  font-size: 14px;
+  color: black;
+}
+
+.profile .text-content .username{
+  color: rgb(153,153,153);
+  font-size: 12px;
+  margin: 0px;
+}
+@media (min-width: 1000px){
+  .profile{
+    display: block;
+  }
+}
