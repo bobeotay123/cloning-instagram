@@ -1,0 +1,122 @@
+.newsfeed {
+  width: 293px;
+  height: 230px;
+  background-color: #ffffff;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 4px;
+  padding: 20px 16px 40px 20px;
+  box-sizing: border-box;
+}
+.newsfeed .badge {
+  height: 14px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.newsfeed .badge .text {
+  color: rgb(153, 153, 153);
+}
+
+.newsfeed .badge .see-all {
+  text-decoration: none;
+  color: #000000;
+}
+.newsfeed .news {
+  overflow: hidden;
+  border: 0px;
+  margin-top: 18px;
+  height: 135px;
+}
+.newsfeed .news .stack {
+  display: flex;
+  margin-bottom: 10px;
+}
+.newsfeed .news .stack .avatar {
+  height: 35px;
+  width: 35px;
+  margin: 0px 12px 0px 0px;
+  border: 1.5px solid gray;
+  border-radius: 100px;
+}
+.newsfeed .news .stack .info {
+  padding-top: 2px;
+}
+
+.newsfeed .news .stack .info .name {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.newsfeed .news .stack .info .time {
+  display: block;
+  color: rgb(153, 153, 153);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  /* margin: 2px 0px 0px 0px; */
+}
+@media (max-width: 1000px) {
+  .newsfeed {
+    height: 82px;
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    align-items: center;
+    flex-basis: 592px;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 10px 0px;
+    box-sizing: content-box;
+  }
+  .newsfeed .badge {
+    display: none;
+  }
+  .newsfeed .news {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  .newsfeed .news .stack {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    margin-bottom: 0px;
+    margin-right: 20px;
+  }
+  .newsfeed .news .stack .avatar {
+    height: 52px;
+    width: 52px;
+    margin: 0px 12px 0px 0px;
+    border: 1.5px solid gray;
+    border-radius: 100px;
+  }
+  .newsfeed .news .stack .info .name {
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+    height: 10px;
+    text-align: center;
+    margin-right: 12px;
+  }
+  .newsfeed .news .stack .info .time {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .newsfeed {
+    border: 0px transparent;
+  }
+}
